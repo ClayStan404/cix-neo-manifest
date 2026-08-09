@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minimal source manifest for the CIX Neo native Debian build system. -->
+<manifest>
+  <remote name="cix"
+          fetch="ssh://git@gitmirror.cixcomputing.com/"
+          review="ssh://git@gitmirror.cixcomputing.com/" />
+
+  <default remote="cix"
+           sync-c="true"
+           sync-j="8"
+           sync-tags="false" />
+
+  <project name="cix_opensource/linux"
+           path="sources/linux"
+           revision="cix_6.6_master_dev"
+           groups="kernel" />
+
+  <project name="cix_opensource/gpu_kernel"
+           path="sources/gpu-kernel"
+           revision="cix_r54p1-11eac0_dev"
+           groups="gpu-dkms" />
+</manifest>
