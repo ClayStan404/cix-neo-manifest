@@ -9,6 +9,12 @@
   <remote name="github"
           fetch="ssh://git@github.com/ClayStan404/" />
 
+  <remote name="cix-oss-github"
+          fetch="ssh://git@github.com/cix-oss/" />
+
+  <remote name="cixtech-github"
+          fetch="ssh://git@github.com/cixtech/" />
+
   <default remote="cix"
            sync-c="true"
            sync-j="8"
@@ -18,6 +24,18 @@
            path="sources/linux"
            revision="cix_6.6_master_dev"
            groups="kernel" />
+
+  <project name="cix-linux-kernel"
+           path="sources/linux-stable"
+           remote="cix-oss-github"
+           revision="master"
+           groups="kernel-stable" />
+
+  <project name="cix-linux-main"
+           path="sources/linux-main"
+           remote="cixtech-github"
+           revision="main"
+           groups="kernel-stable" />
 
   <project name="cix_opensource/gpu_kernel"
            path="sources/gpu-kernel"
