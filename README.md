@@ -14,11 +14,13 @@ mkdir cix-neo-bs
 cd cix-neo-bs
 
 repo init \
-  -u https://github.com/ClayStan404/cix-neo-manifest.git \
+  -u git@github.com:ClayStan404/cix-neo-manifest.git \
   -b main
 
 repo sync --current-branch --no-tags
 ```
 
 Access to the internal CIX Git mirror is required to synchronize the source
-projects declared by the manifest.
+projects declared by the manifest. Because this manifest repository is
+private, the host must also have an SSH key authorized for the GitHub account
+or organization that can access it.
