@@ -24,6 +24,16 @@
            revision="cix_r54p1-11eac0_dev"
            groups="gpu-dkms" />
 
+  <project name="cix_opensource/vpu_driver"
+           path="sources/vpu-driver"
+           revision="cix_vpu_dev"
+           groups="vpu-dkms" />
+
+  <project name="cix_opensource/npu_driver"
+           path="sources/npu-driver"
+           revision="cix_x2_r2p1_dev"
+           groups="npu-dkms" />
+
   <project name="cix-neo-build-scripts"
            path="build-scripts"
            remote="github"
