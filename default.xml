@@ -27,12 +27,12 @@
   <project name="cix-neo-build-scripts"
            path="build-scripts"
            remote="github"
-           revision="main"
+           revision="master"
            groups="build-system" />
 
   <project name="cix-neo-debian"
            path="debian"
            remote="github"
-           revision="main"
+           revision="master"
            groups="debian-packaging" />
 </manifest>

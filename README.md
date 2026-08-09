@@ -17,7 +17,7 @@ cd cix-neo-bs
 
 repo init \
   -u git@github.com:ClayStan404/cix-neo-manifest.git \
-  -b main
+  -b master
 
 repo sync --current-branch --no-tags
 ```
