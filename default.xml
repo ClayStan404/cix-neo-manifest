@@ -47,6 +47,12 @@
            revision="cix_vpu_dev"
            groups="vpu-dkms" />
 
+  <project name="cix_proprietary/cix_proprietary"
+           path="sources/cix-proprietary"
+           revision="cix_master_linux_lfs"
+           groups="vpu-firmware,proprietary"
+           clone-depth="1" />
+
   <project name="cix_opensource/npu_driver"
            path="sources/npu-driver"
            revision="cix_x2_r2p1_dev"
