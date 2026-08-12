@@ -38,6 +38,34 @@
            revision="cix_rtl8852b_dev"
            groups="bt-dkms" />
 
+  <project name="github_mirror/thesofproject/crosstool-ng"
+           path="sources/audio-sof/crosstool-ng"
+           revision="cix-sof-gcc10x-dev"
+           groups="audio-sof" />
+
+  <project name="github_mirror/jcmvbkbc/newlib-xtensa"
+           path="sources/audio-sof/newlib-xtensa"
+           revision="xtensa"
+           groups="audio-sof" />
+
+  <project name="github_mirror/thesofproject/sof"
+           path="sources/audio-sof/sof"
+           revision="cix-stable-v2.11-dev"
+           groups="audio-sof" />
+
+  <project name="github_mirror/thesofproject/tomlc99"
+           path="sources/audio-sof/tomlc99"
+           revision="master"
+           groups="audio-sof">
+    <linkfile src="."
+              dest="sources/audio-sof/sof/tools/rimage/tomlc99" />
+  </project>
+
+  <project name="github_mirror/thesofproject/xtensa-overlay"
+           path="sources/audio-sof/xtensa-overlay"
+           revision="cix-sof-gcc10.2-dev"
+           groups="audio-sof" />
+
   <project name="freedesktop_repo/mesa/drm"
            path="sources/libdrm"
            revision="cix_libdrm_2.4.109_dev"
