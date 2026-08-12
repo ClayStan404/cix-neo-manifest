@@ -2,15 +2,17 @@
 
 Minimal Android `repo` manifest for the native ARM64 Debian build system.
 
-The default manifest contains only the eight projects used by the current
-build system:
+The default manifest contains only projects used by the current build system:
 
-- CIX 6.6 development kernel
-- CIX stable-kernel patch series and defconfig
-- CIX GPU, VPU, and NPU driver sources
-- CIX proprietary VPU firmware
+- CIX development and stable-kernel inputs
+- CIX GPU, Bluetooth, VPU, NPU, ISP, and WLAN driver sources
+- CIX graphics, multimedia, and AI runtime sources
+- Selected CIX proprietary firmware and userspace payloads
 - CIX Neo build scripts
 - CIX Neo Debian packaging metadata
+
+Projects are added incrementally when their first package target is
+implemented; this manifest is not a copy of the legacy workspace manifest.
 
 ## Initialize a workspace
 

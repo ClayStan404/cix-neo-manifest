@@ -33,6 +33,51 @@
            revision="cix_r54p1-11eac0_dev"
            groups="gpu-dkms" />
 
+  <project name="cix_opensource/bt/rtl_bt_driver"
+           path="sources/rtl-bt-driver"
+           revision="cix_rtl8852b_dev"
+           groups="bt-dkms" />
+
+  <project name="freedesktop_repo/mesa/drm"
+           path="sources/libdrm"
+           revision="cix_libdrm_2.4.109_dev"
+           groups="libdrm" />
+
+  <project name="freedesktop_repo/mesa/libglvnd"
+           path="sources/libglvnd"
+           revision="cix_glvnd-v1.7.0_dev"
+           groups="libglvnd" />
+
+  <project name="freedesktop_repo/mesa/mesa"
+           path="sources/mesa"
+           revision="cix_mesa-25.1.5_dev"
+           groups="mesa" />
+
+  <project name="cix_opensource/libva"
+           path="sources/libva"
+           revision="cix_2.22_dev"
+           groups="libva" />
+
+  <project name="ffmpeg_repo/ffmpeg"
+           path="sources/ffmpeg"
+           revision="cix_7.1.1_dev"
+           groups="ffmpeg" />
+
+  <project name="cix_opensource/video_processing"
+           path="sources/video-processing"
+           revision="cix_master"
+           groups="libcme" />
+
+  <project name="cix_opensource/cix-vaapi"
+           path="sources/cix-vaapi"
+           revision="cix_master"
+           groups="cix-vaapi" />
+
+  <project name="cix_opensource/isp_driver"
+           path="sources/isp-driver-v4l2"
+           revision="cix_isp_dev"
+           groups="isp-v4l2-dkms" />
+
   <project name="cix_opensource/vpu_driver"
            path="sources/vpu-driver"
            revision="cix_vpu_dev"
@@ -48,6 +93,36 @@
            path="sources/npu-driver"
            revision="cix_x2_r2p1_dev"
            groups="npu-dkms" />
+
+  <project name="cix_opensource/cix_ai_engine"
+           path="sources/cix-ai-engine"
+           revision="cix_master"
+           groups="ai-engine" />
+
+  <project name="github_mirror/alibaba/MNN"
+           path="sources/mnn"
+           revision="cix_3.6.1_dev"
+           groups="mnn" />
+
+  <project name="freedesktop_repo/gstreamer/gstreamer"
+           path="sources/gstreamer"
+           revision="cix_1.26.2_dev"
+           groups="gstreamer" />
+
+  <project name="cix_opensource/nnstreamer"
+           path="sources/nnstreamer"
+           revision="cix_2.4.2_dev"
+           groups="nnstreamer" />
+
+  <project name="cix_opensource/wlan/fc6xe"
+           path="sources/wlan-qca"
+           revision="cix_wlan_qcacld_dev"
+           groups="wlan-dkms" />
+
+  <project name="cix_opensource/wlan/rtl_wlan_driver"
+           path="sources/wlan-rtl"
+           revision="cix_rtl8852b_dev"
+           groups="wlan-dkms" />
 
   <project name="cix-neo-build-scripts"
            path="build-scripts"
