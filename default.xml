@@ -66,6 +66,104 @@
            revision="cix-sof-gcc10.2-dev"
            groups="audio-sof" />
 
+  <project name="cix_opensource/release/edk2"
+           path="sources/radxa-o6/uefi_release/edk2"
+           revision="cix_opensource_firmware"
+           groups="radxa-o6-firmware" />
+
+  <!-- EDK2 gitlinks are explicit projects so plain `repo sync` is complete. -->
+  <project name="github_mirror/google/brotli"
+           path="sources/radxa-o6/uefi_release/edk2/BaseTools/Source/C/BrotliCompress/brotli"
+           revision="f4153a09f87cbb9c826d8fc12c74642bb2d879ea"
+           groups="radxa-o6-firmware"
+           sync-c="false" />
+
+  <project name="github_mirror/ARMmbed/mbedtls"
+           path="sources/radxa-o6/uefi_release/edk2/CryptoPkg/Library/MbedTlsLib/mbedtls"
+           revision="8c89224991adff88d53cd380f42a2baa36f91454"
+           groups="radxa-o6-firmware"
+           sync-c="false" />
+
+  <project name="github_mirror/openssl/openssl"
+           path="sources/radxa-o6/uefi_release/edk2/CryptoPkg/Library/OpensslLib/openssl"
+           revision="98acb6b02839c609ef5b837794e08d906d965335"
+           groups="radxa-o6-firmware"
+           sync-c="false" />
+
+  <project name="github_mirror/google/brotli"
+           path="sources/radxa-o6/uefi_release/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli"
+           revision="f4153a09f87cbb9c826d8fc12c74642bb2d879ea"
+           groups="radxa-o6-firmware"
+           sync-c="false" />
+
+  <project name="github_mirror/kkos/oniguruma"
+           path="sources/radxa-o6/uefi_release/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma"
+           revision="abfc8ff81df4067f309032467785e06975678f0d"
+           groups="radxa-o6-firmware"
+           sync-c="false" />
+
+  <project name="github_mirror/devicetree-org/pylibfdt"
+           path="sources/radxa-o6/uefi_release/edk2/MdePkg/Library/BaseFdtLib/libfdt"
+           revision="cfff805481bdea27f900c32698171286542b8d3c"
+           groups="radxa-o6-firmware"
+           sync-c="false" />
+
+  <project name="github_mirror/MIPI-Alliance/public-mipi-sys-t"
+           path="sources/radxa-o6/uefi_release/edk2/MdePkg/Library/MipiSysTLib/mipisyst"
+           revision="370b5944c046bab043dd8b133727b2135af7747a"
+           groups="radxa-o6-firmware"
+           sync-c="false" />
+
+  <project name="github_mirror/akheron/jansson"
+           path="sources/radxa-o6/uefi_release/edk2/RedfishPkg/Library/JsonLib/jansson"
+           revision="e9ebfa7e77a6bee77df44e096b100e7131044059"
+           groups="radxa-o6-firmware"
+           sync-c="false" />
+
+  <project name="github_mirror/DMTF/libspdm"
+           path="sources/radxa-o6/uefi_release/edk2/SecurityPkg/DeviceSecurity/SpdmLib/libspdm"
+           revision="98ef964e1e9a0c39c7efb67143d3a13a819432e0"
+           groups="radxa-o6-firmware"
+           sync-c="false" />
+
+  <project name="github_mirror/tianocore/edk2-cmocka"
+           path="sources/radxa-o6/uefi_release/edk2/UnitTestFrameworkPkg/Library/CmockaLib/cmocka"
+           revision="1cc9cde3448cdd2e000886a26acf1caac2db7cf1"
+           groups="radxa-o6-firmware"
+           sync-c="false" />
+
+  <project name="github_mirror/google/googletest"
+           path="sources/radxa-o6/uefi_release/edk2/UnitTestFrameworkPkg/Library/GoogleTestLib/googletest"
+           revision="86add13493e5c881d7e4ba77fb91c1f57752b3a4"
+           groups="radxa-o6-firmware"
+           sync-c="false" />
+
+  <project name="github_mirror/tianocore/edk2-subhook"
+           path="sources/radxa-o6/uefi_release/edk2/UnitTestFrameworkPkg/Library/SubhookLib/subhook"
+           revision="83d4e1ebef3588fae48b69a7352cc21801cb70bc"
+           groups="radxa-o6-firmware"
+           sync-c="false" />
+
+  <project name="cix_opensource/release/edk2-non-osi"
+           path="sources/radxa-o6/uefi_release/edk2-non-osi"
+           revision="cix_opensource_firmware"
+           groups="radxa-o6-firmware" />
+
+  <project name="cix_opensource/release/edk2-platforms"
+           path="sources/radxa-o6/uefi_release/edk2-platforms"
+           revision="cix_opensource_firmware"
+           groups="radxa-o6-firmware" />
+
+  <project name="cix_private/acpica"
+           path="sources/radxa-o6/uefi_release/tools/acpica"
+           revision="refs/tags/R2024_12_12"
+           groups="radxa-o6-firmware" />
+
+  <project name="cix_proprietary/cix_bsp_release"
+           path="sources/radxa-o6/cix_bsp_release"
+           revision="cix_master"
+           groups="radxa-o6-firmware,proprietary" />
+
   <project name="freedesktop_repo/mesa/drm"
            path="sources/libdrm"
            revision="cix_libdrm_2.4.109_dev"
