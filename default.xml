@@ -168,6 +168,13 @@
            revision="cix_master"
            groups="radxa-o6-firmware,proprietary" />
 
+  <!-- ARM64 CSU PM inspection tool used only by explicit validation flows. -->
+  <project name="tools/cix_binary"
+           path="sources/cix-binary"
+           revision="cf4388565546e14ab4c566e55495cd6757edd92e"
+           groups="pm-validation"
+           clone-depth="1" />
+
   <project name="freedesktop_repo/mesa/drm"
            path="sources/libdrm"
            revision="cix_libdrm_2.4.109_dev"
