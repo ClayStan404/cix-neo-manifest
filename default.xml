@@ -12,6 +12,10 @@
   <remote name="cixtech-github"
           fetch="ssh://git@github.com/cixtech/" />
 
+  <!-- Official Debian packaging repositories used as the 7.0 media baseline. -->
+  <remote name="debian-salsa"
+          fetch="https://salsa.debian.org/" />
+
   <default remote="cix"
            sync-c="true"
            sync-j="8"
@@ -234,6 +238,21 @@
            path="sources/gstreamer"
            revision="cix_1.26.2_dev"
            groups="gstreamer" />
+
+  <!-- Debian 13 release tags, pinned to their peeled commits. -->
+  <project name="gstreamer-team/gst-plugins-base1.0"
+           path="sources/debian/gst-plugins-base1.0"
+           remote="debian-salsa"
+           revision="25c68f753e42b15d7c76704659a372f4dc75beb3"
+           groups="gstreamer-7.0"
+           sync-c="false" />
+
+  <project name="gstreamer-team/gst-plugins-good1.0"
+           path="sources/debian/gst-plugins-good1.0"
+           remote="debian-salsa"
+           revision="2cbc9a10835da9114c85f98cd5fc9541772266fc"
+           groups="gstreamer-7.0"
+           sync-c="false" />
 
   <project name="cix_opensource/nnstreamer"
            path="sources/nnstreamer"

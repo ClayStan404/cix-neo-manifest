@@ -7,12 +7,15 @@ The default manifest contains only projects used by the current build system:
 - CIX development and stable-kernel inputs
 - CIX GPU, Bluetooth, VPU, NPU, ISP, and WLAN driver sources
 - CIX graphics, multimedia, and AI runtime sources
+- Revision-pinned Debian Salsa packaging for the Linux 7.0 media stack
 - Selected CIX proprietary firmware and userspace payloads
 - CIX Neo build scripts
 - CIX Neo Debian packaging metadata
 
 Projects are added incrementally when their first package target is
 implemented; this manifest is not a copy of the legacy workspace manifest.
+The Salsa projects preserve Debian's source-package history and package split;
+CIX changes remain separate quilt overlays in the Debian metadata project.
 
 ## Initialize a workspace
 
