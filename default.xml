@@ -168,6 +168,33 @@
            revision="cix_master"
            groups="radxa-o6-firmware,proprietary" />
 
+  <!-- Source-built Sky1 SE/DDR firmware and native secure-image tooling. -->
+  <project name="cix_security/ddr"
+           path="sources/radxa-o6/bootloader/ddr"
+           revision="cix_master"
+           groups="radxa-o6-bootloader" />
+
+  <project name="cix_security/firmware"
+           path="sources/radxa-o6/bootloader/firmware"
+           revision="cix_firmware_dev"
+           groups="radxa-o6-bootloader" />
+
+  <project name="cix_security/library"
+           path="sources/radxa-o6/bootloader/library"
+           revision="cix_library_dev"
+           groups="radxa-o6-bootloader" />
+
+  <project name="cix_private/sw_tools_private"
+           path="sources/radxa-o6/bootloader/sw-tools-private"
+           revision="cix_master"
+           groups="radxa-o6-bootloader" />
+
+  <!-- PM/PBL remain revision-matched payloads until native Xtensa is available. -->
+  <project name="cix_proprietary/cix_firmware"
+           path="sources/radxa-o6/bootloader/firmware-binaries"
+           revision="cix_master"
+           groups="radxa-o6-bootloader,proprietary" />
+
   <!-- ARM64 CSU PM inspection tool used only by explicit validation flows. -->
   <project name="tools/cix_binary"
            path="sources/cix-binary"
