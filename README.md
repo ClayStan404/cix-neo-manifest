@@ -9,6 +9,7 @@ The default manifest contains only projects used by the current build system:
 - CIX graphics, multimedia, and AI runtime sources
 - CIX Sky1 DDR/SE firmware sources and secure-image packaging sources
 - Private Sky1, Sky1P, and Star1 development EDK2 validation sources
+- Dedicated EDK2 Standalone MM sources
 - Revision-pinned Debian Salsa packaging for the Linux 7.0 media stack
 - Selected CIX proprietary firmware and userspace payloads
 - CIX Neo build scripts

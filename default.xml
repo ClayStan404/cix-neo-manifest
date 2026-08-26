@@ -256,6 +256,59 @@
            revision="refs/tags/R2024_12_12"
            groups="uefi-development" />
 
+  <!-- Standalone MM uses dedicated EDK2 branches, not the normal UEFI tree. -->
+  <project name="cix_private/edk2"
+           path="sources/uefi-stmm/edk2"
+           revision="cix_master_stmm"
+           groups="uefi-stmm" />
+
+  <project name="github_mirror/ucb-bar/berkeley-softfloat-3"
+           path="sources/uefi-stmm/edk2/ArmPkg/Library/ArmSoftFloatLib/berkeley-softfloat-3"
+           revision="b64af41c3276f97f0e181920400ee056b9c88037"
+           groups="uefi-stmm"
+           sync-c="false" />
+
+  <project name="github_mirror/google/brotli"
+           path="sources/uefi-stmm/edk2/BaseTools/Source/C/BrotliCompress/brotli"
+           revision="f4153a09f87cbb9c826d8fc12c74642bb2d879ea"
+           groups="uefi-stmm"
+           sync-c="false" />
+
+  <project name="github_mirror/openssl/openssl"
+           path="sources/uefi-stmm/edk2/CryptoPkg/Library/OpensslLib/openssl"
+           revision="d82e959e621a3d597f1e0d50ff8c2d8b96915fd7"
+           groups="uefi-stmm"
+           sync-c="false" />
+
+  <project name="github_mirror/google/brotli"
+           path="sources/uefi-stmm/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli"
+           revision="f4153a09f87cbb9c826d8fc12c74642bb2d879ea"
+           groups="uefi-stmm"
+           sync-c="false" />
+
+  <project name="github_mirror/kkos/oniguruma"
+           path="sources/uefi-stmm/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma"
+           revision="abfc8ff81df4067f309032467785e06975678f0d"
+           groups="uefi-stmm"
+           sync-c="false" />
+
+  <project name="github_mirror/akheron/jansson"
+           path="sources/uefi-stmm/edk2/RedfishPkg/Library/JsonLib/jansson"
+           revision="e9ebfa7e77a6bee77df44e096b100e7131044059"
+           groups="uefi-stmm"
+           sync-c="false" />
+
+  <project name="github_mirror/tianocore/edk2-cmocka"
+           path="sources/uefi-stmm/edk2/UnitTestFrameworkPkg/Library/CmockaLib/cmocka"
+           revision="1cc9cde3448cdd2e000886a26acf1caac2db7cf1"
+           groups="uefi-stmm"
+           sync-c="false" />
+
+  <project name="cix_private/edk2-platforms"
+           path="sources/uefi-stmm/edk2-platforms"
+           revision="cix_master_stmm"
+           groups="uefi-stmm" />
+
   <!-- Source-built Sky1 SE/DDR firmware and native secure-image tooling. -->
   <project name="cix_security/ddr"
            path="sources/radxa-o6/bootloader/ddr"
