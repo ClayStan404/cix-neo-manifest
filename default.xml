@@ -42,6 +42,21 @@
            revision="cix_rtl8852b_dev"
            groups="bt-dkms" />
 
+  <project name="cix_opensource/cix_unit_test"
+           path="sources/cix-unit-test"
+           revision="cix_master"
+           groups="validation" />
+
+  <project name="cix_test/ltp_opensource"
+           path="sources/ltp"
+           revision="cix_master"
+           groups="validation" />
+
+  <project name="linux_repo/cix_ramparser"
+           path="sources/ramparser"
+           revision="cix_python3_dev"
+           groups="diagnostics" />
+
   <project name="github_mirror/thesofproject/crosstool-ng"
            path="sources/audio-sof/crosstool-ng"
            revision="cix-sof-gcc10x-dev"
